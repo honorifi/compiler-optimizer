@@ -17,7 +17,6 @@ void load_func_table(char* func_unit_table) {
 
 	while (fscanf(fufp, "%s%d%d", func_name, &ids, &ide) != EOF) {
 		sfn = func_name;
-		printf("%s %d %d\n", func_name, ids, ide);
 		func_no[sfn] = make_pair(ids, ide);
 	}
 
